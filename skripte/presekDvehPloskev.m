@@ -59,7 +59,7 @@ function K = presekDvehPloskev (f1, C1, f2, C2, gradf1, gradf2, X0, korak, funkc
   g = f2(x,y,z);
   isosurface(x,y,z,f,C1);
   hold on;
-  isosurface(x,y,z,g,C2);
+  %isosurface(x,y,z,g,C2);
   axis equal;
   plot3(Y(1,:),Y(2,:),Y(3,:),"*r");
 endfunction
