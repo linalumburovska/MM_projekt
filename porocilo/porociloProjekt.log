@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.18)  3 JUN 2017 18:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.18)  3 JUN 2017 23:13
 entering extended mode
 **./porociloProjekt.tex
 (porociloProjekt.tex
@@ -664,7 +664,45 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
 
-Overfull \hbox (0.90355pt too wide) in paragraph at lines 43--44
+Underfull \hbox (badness 10000) in paragraph at lines 40--43
+
+ []
+
+<eul1.jpg, id=19, 562.67357pt x 562.67357pt>
+File: eul1.jpg Graphic file (type jpg)
+ <use eul1.jpg>
+Package pdftex.def Info: eul1.jpg used on input line 44.
+(pdftex.def)             Requested size: 168.80336pt x 168.80336pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+
+ []
+
+[1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./eul1.jpg>]
+<eul2.jpg, id=33, 562.67357pt x 562.67357pt>
+File: eul2.jpg Graphic file (type jpg)
+ <use eul2.jpg>
+Package pdftex.def Info: eul2.jpg used on input line 48.
+(pdftex.def)             Requested size: 168.80336pt x 168.80336pt.
+File: eul2.jpg Graphic file (type jpg)
+ <use eul2.jpg>
+Package pdftex.def Info: eul2.jpg used on input line 51.
+(pdftex.def)             Requested size: 112.53271pt x 112.53271pt.
+File: eul1.jpg Graphic file (type jpg)
+
+<use eul1.jpg>
+Package pdftex.def Info: eul1.jpg used on input line 52.
+(pdftex.def)             Requested size: 112.53271pt x 112.53271pt.
+ <eul3_newt.jpg, id=34, 562.67357pt x 562.67357pt>
+File: eul3_newt.jpg Graphic file (type jpg)
+
+<use eul3_newt.jpg>
+Package pdftex.def Info: eul3_newt.jpg used on input line 53.
+(pdftex.def)             Requested size: 112.53271pt x 112.53271pt.
+
+Overfull \hbox (0.90355pt too wide) in paragraph at lines 56--57
 \OT1/cmr/m/n/10 Potreben pogoj za de-lo-vanje metod je, da sta funkciji $\OML/c
 mm/m/it/10 f[]$ \OT1/cmr/m/n/10 in $\OML/cmm/m/it/10 f[]$ \OT1/cmr/m/n/10 par-c
 ialno odvedljivi
@@ -673,140 +711,246 @@ ialno odvedljivi
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 72.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 85.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 72.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 85.
 
-Overfull \hbox (15.00365pt too wide) in paragraph at lines 72--73
+Overfull \hbox (15.00365pt too wide) in paragraph at lines 85--86
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[1
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (51.00403pt too wide) in paragraph at lines 77--78
+[2 <./eul2.jpg> <./eul3_newt.jpg>]
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 90--91
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (111.00464pt too wide) in paragraph at lines 79--80
+Overfull \hbox (111.00464pt too wide) in paragraph at lines 92--93
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
-<primer1_1.jpg, id=45, 567.83571pt x 567.83571pt>
+<primer1_1.jpg, id=49, 567.83571pt x 567.83571pt>
 File: primer1_1.jpg Graphic file (type jpg)
  <use primer1_1.jpg>
-Package pdftex.def Info: primer1_1.jpg used on input line 95.
+Package pdftex.def Info: primer1_1.jpg used on input line 108.
 (pdftex.def)             Requested size: 170.35202pt x 170.35202pt.
 
-<primer1_2.jpg, id=46, 567.83571pt x 567.83571pt>
+<primer1_2.jpg, id=50, 567.83571pt x 567.83571pt>
 File: primer1_2.jpg Graphic file (type jpg)
  <use primer1_2.jpg>
-Package pdftex.def Info: primer1_2.jpg used on input line 96.
+Package pdftex.def Info: primer1_2.jpg used on input line 109.
 (pdftex.def)             Requested size: 170.35202pt x 170.35202pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--99
-
- []
-
-<primer2_1.jpg, id=47, 567.83571pt x 567.83571pt>
+ [3 <./primer1_1.jpg> <./primer1_2.jpg>]
+<primer2_1.jpg, id=65, 567.83571pt x 567.83571pt>
 File: primer2_1.jpg Graphic file (type jpg)
  <use primer2_1.jpg>
-Package pdftex.def Info: primer2_1.jpg used on input line 103.
+Package pdftex.def Info: primer2_1.jpg used on input line 123.
 (pdftex.def)             Requested size: 170.35202pt x 170.35202pt.
 
-<primer2_2.jpg, id=48, 551.70403pt x 552.34929pt>
+<primer2_2.jpg, id=66, 551.70403pt x 552.34929pt>
 File: primer2_2.jpg Graphic file (type jpg)
  <use primer2_2.jpg>
-Package pdftex.def Info: primer2_2.jpg used on input line 104.
+Package pdftex.def Info: primer2_2.jpg used on input line 124.
 (pdftex.def)             Requested size: 165.51248pt x 165.70605pt.
 
-Overfull \hbox (11.69785pt too wide) in paragraph at lines 103--107
-[] [] \OT1/cmr/m/n/10 VS-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--107
-
- []
-
-[2 <./primer1_1.jpg> <./primer1_2.jpg>]
-<primer3_1.jpg, id=60, 567.83571pt x 567.83571pt>
+<primer3_1.jpg, id=67, 567.83571pt x 567.83571pt>
 File: primer3_1.jpg Graphic file (type jpg)
  <use primer3_1.jpg>
-Package pdftex.def Info: primer3_1.jpg used on input line 111.
+Package pdftex.def Info: primer3_1.jpg used on input line 138.
 (pdftex.def)             Requested size: 170.35202pt x 170.35202pt.
 
-<primer3_2.jpg, id=61, 567.83571pt x 567.83571pt>
+<primer3_2.jpg, id=68, 567.83571pt x 567.83571pt>
 File: primer3_2.jpg Graphic file (type jpg)
  <use primer3_2.jpg>
-Package pdftex.def Info: primer3_2.jpg used on input line 112.
+Package pdftex.def Info: primer3_2.jpg used on input line 139.
 (pdftex.def)             Requested size: 170.35202pt x 170.35202pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--115
-
- []
-
-<primer4_1.jpg, id=62, 567.83571pt x 567.83571pt>
+<primer4_1.jpg, id=69, 567.83571pt x 567.83571pt>
 File: primer4_1.jpg Graphic file (type jpg)
  <use primer4_1.jpg>
-Package pdftex.def Info: primer4_1.jpg used on input line 119.
+Package pdftex.def Info: primer4_1.jpg used on input line 153.
 (pdftex.def)             Requested size: 170.35202pt x 170.35202pt.
 
-<primer4_2.jpg, id=63, 567.83571pt x 567.83571pt>
+<primer4_2.jpg, id=70, 567.83571pt x 567.83571pt>
 File: primer4_2.jpg Graphic file (type jpg)
  <use primer4_2.jpg>
-Package pdftex.def Info: primer4_2.jpg used on input line 120.
+Package pdftex.def Info: primer4_2.jpg used on input line 154.
 (pdftex.def)             Requested size: 170.35202pt x 170.35202pt.
 
-<primer4_4.jpg, id=64, 567.83571pt x 567.83571pt>
+<primer4_4.jpg, id=71, 567.83571pt x 567.83571pt>
 File: primer4_4.jpg Graphic file (type jpg)
  <use primer4_4.jpg>
-Package pdftex.def Info: primer4_4.jpg used on input line 121.
+Package pdftex.def Info: primer4_4.jpg used on input line 155.
 (pdftex.def)             Requested size: 170.35202pt x 170.35202pt.
 
-<primer4_3.jpg, id=65, 567.83571pt x 567.83571pt>
+<primer4_3.jpg, id=72, 567.83571pt x 567.83571pt>
 File: primer4_3.jpg Graphic file (type jpg)
  <use primer4_3.jpg>
-Package pdftex.def Info: primer4_3.jpg used on input line 122.
+Package pdftex.def Info: primer4_3.jpg used on input line 156.
 (pdftex.def)             Requested size: 170.35202pt x 170.35202pt.
+ [4 <./primer2_1.jpg> <./primer2_2.jpg> <./primer3_1.jpg> <./primer3_2.jpg>]
+<primer5_1.png, id=77, 415.5525pt x 304.88907pt>
+File: primer5_1.png Graphic file (type png)
+ <use primer5_1.png>
+Package pdftex.def Info: primer5_1.png used on input line 170.
+(pdftex.def)             Requested size: 124.6667pt x 91.46742pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--124
+<primer5_2.png, id=78, 397.485pt x 299.61937pt>
+File: primer5_2.png Graphic file (type png)
+ <use primer5_2.png>
+Package pdftex.def Info: primer5_2.png used on input line 171.
+(pdftex.def)             Requested size: 119.24641pt x 89.8865pt.
+
+<primer5_3.png, id=79, 406.51875pt x 313.17pt>
+File: primer5_3.png Graphic file (type png)
+ <use primer5_3.png>
+Package pdftex.def Info: primer5_3.png used on input line 172.
+(pdftex.def)             Requested size: 121.95656pt x 93.95172pt.
+
+<primer5_4.png, id=81, 403.5075pt x 294.34969pt>
+File: primer5_4.png Graphic file (type png)
+ <use primer5_4.png>
+Package pdftex.def Info: primer5_4.png used on input line 173.
+(pdftex.def)             Requested size: 121.05318pt x 88.30557pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--124
+Underfull \hbox (badness 10000) in paragraph at lines 170--174
 
  []
 
-[3 <./primer2_1.jpg> <./primer2_2.jpg> <./primer3_1.jpg> <./primer3_2.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 125.
+[5 <./primer4_1.jpg> <./primer4_2.jpg> <./primer4_4.jpg> <./primer4_3.jpg> <./p
+rimer5_1.png> <./primer5_2.png>]
+<primer6_1.png, id=89, 387.69844pt x 274.77657pt>
+File: primer6_1.png Graphic file (type png)
+ <use primer6_1.png>
+Package pdftex.def Info: primer6_1.png used on input line 187.
+(pdftex.def)             Requested size: 116.31042pt x 82.4336pt.
 
-[4 <./primer4_1.jpg> <./primer4_2.jpg> <./primer4_4.jpg> <./primer4_3.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 125.
+<primer6_2.png, id=90, 382.42876pt x 292.84406pt>
+File: primer6_2.png Graphic file (type png)
+ <use primer6_2.png>
+Package pdftex.def Info: primer6_2.png used on input line 188.
+(pdftex.def)             Requested size: 114.7295pt x 87.85388pt.
+
+<primer6_3.png, id=91, 382.42876pt x 277.035pt>
+File: primer6_3.png Graphic file (type png)
+ <use primer6_3.png>
+Package pdftex.def Info: primer6_3.png used on input line 189.
+(pdftex.def)             Requested size: 114.7295pt x 83.11113pt.
+
+<primer6_4.png, id=92, 384.6872pt x 302.63063pt>
+File: primer6_4.png Graphic file (type png)
+ <use primer6_4.png>
+Package pdftex.def Info: primer6_4.png used on input line 190.
+(pdftex.def)             Requested size: 115.40704pt x 90.78989pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--191
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--191
+
+ []
+
+<primer7_1.png, id=93, 382.42876pt x 301.8778pt>
+File: primer7_1.png Graphic file (type png)
+ <use primer7_1.png>
+Package pdftex.def Info: primer7_1.png used on input line 204.
+(pdftex.def)             Requested size: 114.7295pt x 90.56403pt.
+
+<primer7_2.png, id=94, 382.42876pt x 289.08pt>
+File: primer7_2.png Graphic file (type png)
+ <use primer7_2.png>
+Package pdftex.def Info: primer7_2.png used on input line 205.
+(pdftex.def)             Requested size: 114.7295pt x 86.72466pt.
+
+<primer7_3.png, id=95, 382.42876pt x 287.57437pt>
+File: primer7_3.png Graphic file (type png)
+ <use primer7_3.png>
+Package pdftex.def Info: primer7_3.png used on input line 206.
+(pdftex.def)             Requested size: 114.7295pt x 86.27296pt.
+
+<primer7_4.png, id=96, 391.4625pt x 280.04625pt>
+File: primer7_4.png Graphic file (type png)
+ <use primer7_4.png>
+Package pdftex.def Info: primer7_4.png used on input line 207.
+(pdftex.def)             Requested size: 117.43965pt x 84.01451pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--208
+
+ []
+
+[6 <./primer5_3.png> <./primer5_4.png> <./primer6_1.png> <./primer6_2.png> <./p
+rimer6_3.png> <./primer6_4.png>]
+<primer8_1.png, id=103, 382.42876pt x 264.23718pt>
+File: primer8_1.png Graphic file (type png)
+ <use primer8_1.png>
+Package pdftex.def Info: primer8_1.png used on input line 221.
+(pdftex.def)             Requested size: 114.7295pt x 79.27176pt.
+
+<primer8_2.png, id=104, 382.42876pt x 299.61937pt>
+File: primer8_2.png Graphic file (type png)
+ <use primer8_2.png>
+Package pdftex.def Info: primer8_2.png used on input line 222.
+(pdftex.def)             Requested size: 114.7295pt x 89.8865pt.
+
+<primer8_3.png, id=105, 382.42876pt x 286.82156pt>
+File: primer8_3.png Graphic file (type png)
+ <use primer8_3.png>
+Package pdftex.def Info: primer8_3.png used on input line 223.
+(pdftex.def)             Requested size: 114.7295pt x 86.04712pt.
+
+<primer8_4.png, id=106, 389.95688pt x 284.56313pt>
+File: primer8_4.png Graphic file (type png)
+ <use primer8_4.png>
+Package pdftex.def Info: primer8_4.png used on input line 224.
+(pdftex.def)             Requested size: 116.98796pt x 85.36958pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--225
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--225
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 234.
+[7 <./primer7_1.png> <./primer7_2.png> <./primer7_3.png> <./primer7_4.png> <./p
+rimer8_1.png> <./primer8_2.png> <./primer8_3.png> <./primer8_4.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 234.
 
 (porociloProjekt.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 125.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 125.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 234.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 234.
 Package rerunfilecheck Info: File `porociloProjekt.out' has not changed.
 (rerunfilecheck)             Checksum: 1216A4453DBF2C7E68C054EBB80F187D;314.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 125.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 234.
  ) 
 Here is how much of TeX's memory you used:
- 8674 strings out of 493333
- 117999 string characters out of 3139197
- 238089 words of memory out of 3000000
- 12079 multiletter control sequences out of 15000+200000
+ 8772 strings out of 493333
+ 119563 string characters out of 3139197
+ 236379 words of memory out of 3000000
+ 12155 multiletter control sequences out of 15000+200000
  11849 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,9n,42p,376b,2396s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -814,16 +958,19 @@ Here is how much of TeX's memory you used:
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on porociloProjekt.pdf (4 pages, 892244 bytes).
+onts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/symbols/msam7.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/symbols/msbm10.pfb>
+Output written on porociloProjekt.pdf (7 pages, 1413700 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 169 PDF objects out of 1000 (max. 8388607)
+ 28 named destinations out of 1000 (max. 500000)
+ 178 words of extra memory for PDF output out of 10000 (max. 10000000)
 

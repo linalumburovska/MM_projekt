@@ -38,7 +38,31 @@ Mentor: Damir Franetič}
 \end{frame}
 
 \begin{frame}{Eulerjeva metoda + geometrična intuicija}
+	
 
+\end{frame}
+
+\begin{frame}{Eulerjeva metoda brez popravljanja}
+	Opazimo, da je samo Eulerjeva metoda "blizu" pravilni rešitvi, ampak ni vredu. \\
+	\begin{center}
+		\includegraphics[scale=0.30]{eul1}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Eulerjeva metoda brez popravljanja}
+	Napake se seštevajo in so na večjem intervalu bolj opazne.\\
+	\begin{center}
+		\includegraphics[scale=0.30]{eul2}
+	\end{center}
+	
+\end{frame}
+
+\begin{frame}{Eulerjeva metoda s popravljanjem z Newtonovo metodo}
+	Ko za popravljanje napake uporabimo Newtonovo metodo, dobimo pravilno "krivuljo".
+	\includegraphics[scale=0.2]{eul2}
+	\includegraphics[scale=0.2]{eul1}
+	\includegraphics[scale=0.2]{eul3_newt}
+	
 \end{frame}
 
 \begin{frame}{Potrebni pogoji + J matrika}
@@ -61,10 +85,6 @@ Mentor: Damir Franetič}
 
 \begin{frame}{Razlaga adaptivnega koraka? (utemeljitev implementacije in zakaj je potrebna)}
 
-\end{frame}
-
-\begin{frame}{Koncna analiza parov ploskev za vsak primer + slike}
-	Delovanje našega programa lahko preverimo s programom, ki smo ga napisali v Octave-u. Kot vhodne parametre mu podamo obe implicitno podani funkciji $f_{1}$, $f_{2}$, $C1$, $C2$, $grad(f_{1})$, $grad(f_{2})$. Določimo tudi začetni približek $x_{0}$, začetno dolžino koraka in pa parameter, ki določa metodo delovanja (Euler/Runge-Kutta).
 \end{frame}
 
 \begin{frame}{Koncna analiza parov ploskev za vsak primer + slike}

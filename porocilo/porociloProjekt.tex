@@ -37,8 +37,21 @@
 	\end{itemize}
 
 \subsection{Delovanje metode}
+	nek text spredi še....\\
+	\newline
+	Opazimo, da je samo Eulerjeva metoda "blizu" pravilni rešitvi, ampak ni vredu.
+	\begin{center}
+		\includegraphics[scale=0.30]{eul1}
+	\end{center}
+	Napake se seštevajo in so na večjem intervalu bolj opazne.\\
+	\begin{center}
+		\includegraphics[scale=0.30]{eul2}
+	\end{center}
+	Ko za popravljanje napake uporabimo Newtonovo metodo, dobimo pravilno "krivuljo".\\
+	\includegraphics[scale=0.2]{eul2}
+	\includegraphics[scale=0.2]{eul1}
+	\includegraphics[scale=0.2]{eul3_newt}
 	
-
 \subsection{Potrebni pogoj in Jacobijeva matrika}
 	Potreben pogoj za delovanje metod je, da sta funkciji $f_{1}$ in $f_{2}$ parcialno odvedljivi in da ima Jacobijeva matrika parcialnih odvodov poln rang 2. Za uspešno delovanje Newtonove metode moramo poiskati Jacobijevo matriko leve strani sistema nelinearnih enačb.
 
@@ -112,8 +125,8 @@
 	\begin{center}
 	\begin{tabular}{ |c|c|c| } 
  		\hline
- 			MERITEV & EULER & RK4 \\ 
-			povpre\v{c}je \v{s}tevilo korakov & 3.0202 & 1.0404 \\ 
+ 			 & EULER & RK4 \\ 
+			povprečno število korakov & 3.0202 & 1.0404 \\ 
  		\hline
  	\end{tabular}
 	\end{center}
@@ -127,8 +140,8 @@
 	\begin{center}
 	\begin{tabular}{ |c|c|c| } 
  		\hline
- 			MERITEV & EULER & RK4 \\ 
-			povpre\v{c}je \v{s}tevilo korakov & 3.0303 & 1.7273 \\ 
+ 			 & EULER & RK4 \\ 
+			povprečno število korakov & 3.0303 & 1.7273 \\ 
  		\hline
  	\end{tabular}
 	\end{center}
@@ -144,8 +157,8 @@
 	\begin{center}
 	\begin{tabular}{ |c|c|c| } 
  		\hline
- 			MERITEV & EULER & RK4 \\ 
-			povpre\v{c}je \v{s}tevilo korakov & 75.856 & 16.843 \\ 
+ 			 & EULER & RK4 \\ 
+			povprečno število korakov & 75.856 & 16.843 \\ 
  		\hline
  	\end{tabular}
 	\end{center}
@@ -161,8 +174,8 @@
 	\begin{center}
 	\begin{tabular}{ |c|c|c| } 
  		\hline
- 			MERITEV & EULER & RK4 \\ 
-			povpre\v{c}je \v{s}tevilo korakov & 1.2323 & 2.6566 \\ 
+ 			 & EULER & RK4 \\ 
+			povprečno število korakov & 1.2323 & 2.6566 \\ 
  		\hline
  	\end{tabular}
 	\end{center}
@@ -178,8 +191,8 @@
 	\begin{center}
 	\begin{tabular}{ |c|c|c| } 
  		\hline
- 			MERITEV & EULER & RK4 \\ 
-			povpre\v{c}je \v{s}tevilo korakov & 1.0404 & 3.0202 \\ 
+ 			 & EULER & RK4 \\ 
+			povprečno število korakov & 1.0404 & 3.0202 \\ 
  		\hline
  	\end{tabular}
 	\end{center}
@@ -195,8 +208,8 @@
 	\begin{center}
 	\begin{tabular}{ |c|c|c| } 
  		\hline
- 			MERITEV & EULER & RK4 \\ 
-			povpre\v{c}je \v{s}tevilo korakov & 1.9495 & 3.0202 \\ 
+ 			 & EULER & RK4 \\ 
+			povprečno število korakov & 1.9495 & 3.0202 \\ 
  		\hline
  	\end{tabular}
 	\end{center}
@@ -212,8 +225,8 @@
 	\begin{center}
 	\begin{tabular}{ |c|c|c| } 
  		\hline
- 			MERITEV & EULER & RK4 \\ 
-			povpre\v{c}je \v{s}tevilo korakov & 2.111 & 3.1212 \\ 
+ 			 & EULER & RK4 \\ 
+			povprečno število korakov & 2.111 & 3.1212 \\ 
  		\hline
  	\end{tabular}
 	\end{center}

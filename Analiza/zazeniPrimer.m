@@ -68,8 +68,6 @@ function zazeniPrimer(primer,korak,funkcija,adaptivno,tspan)
       % ************************************* %
       % DELUJOC PRIMER 4, 1: in 2: iz pdf
       % ************************************* %
-      st korakov = 300;
-      tspan = [0, 100]
 
       f1 = @(a) a(1).^2 + (cos(a(2)).*(a(3).^2)) - 1;
       gradf1 = @(a) [2*a(1); -a(3).^2.*sin(a(2)); 2*a(3).*cos(a(2))];
