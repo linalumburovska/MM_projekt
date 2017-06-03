@@ -1,0 +1,56 @@
+\documentclass{beamer}
+\mode<presentation>
+{
+  \usetheme{default}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage[slovene]{babel}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[section]{placeins}
+
+\title{Presek dveh implicitno danih ploskev}
+\author{Aljaž Verlič, Blažka Blatnik, Lina Lumburovska, Luka Tavčer}
+\date{5. junij 2017}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Opis problema + modela (F)?}
+   
+\end{frame}
+
+\begin{frame}{Opis metod?}
+
+\end{frame}
+
+\begin{frame}{Eulerjeva motoda + geometricna intuicija}
+
+\end{frame}
+
+\begin{frame}{Potrebni pogoji + J matrika}
+
+\end{frame}
+
+\begin{frame}{Razlaga adaptivnega koraka? (utemeljitev implementacije in zakaj je potrebna)}
+
+\end{frame}
+
+\begin{frame}{Koncna analiza parov ploskev za vsako opcij + slike}
+
+\end{frame}
+
+\begin{frame}{Ugotovitve (prednosti in slabosti)}
+
+\end{frame}
+
+\end{document}
