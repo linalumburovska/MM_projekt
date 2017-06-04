@@ -23,49 +23,95 @@ Mentor: Damir Franetič}
   \titlepage
 \end{frame}
 
-\begin{frame}{Opis problema + modela (F)?}
-   V $\mathbb{R}^3$ imamo podani dve poljubni implicitno podani ploskvi, opisanimi z enačbama $f_{1}(x)$ = $C_{1}$ in\\ $f_{2}(x)$ = $C_{2}$, ki ju lahko gledamo tudi kot enačbi nivojnic funkcij $f_{1}$ in $f_{2}$, presek pa je množica rešitev tega nelinearnega sistema enačb.\\
+\begin{frame}{Opis problema}
+   V $\mathbb{R}^3$ imamo podani dve poljubni implicitno dani ploskvi, opisanimi z enačbama $f_{1}(x)$ = $C_{1}$ in $f_{2}(x)$ = $C_{2}$.\\
    Naša naloga je poiskati krivuljo $K$, ki predstavlja presek teh dveh ploskev.\\
-   Nalogo bomo rešili na 4 načine z uporabo metod za numerično reševanje diferencialnih enačb. Uporabili bomo:
-   \begin{itemize}  
-   	\item Eulerjevo/Runge-Kutta s fiksno dolžino koraka
-   	\item Eulerjevo/Runge-Kutta z adaptivno dolžino koraka
-   \end{itemize}
+   \vspace{5mm}
+   Presek ploskev je množica rešitev nelinearnega sistema enačb:
+   \begin{center}
+		$f_{1}(x)$ = $C_{1}$\\$f_{2}(x)$ = $C_{2}$
+	\end{center}
 \end{frame}
 
-\begin{frame}{Opis metod?}
-
+\begin{frame}{Opis modela}
+  Sistem lahko gledamo tudi, kot enačbe nivojnic funkcij  $f_{1}$ in $f_{2}$, krivulja K pa je presek teh nivojnic. Gradienta funkcij sta tako v vsaki točki krivulje preseka, pravokotna nanjo. To opišemo:
+    \begin{center}
+        	$F(x) = \dfrac{(grad f_{1}(x))x (grad f_{2}(x))}{\|grad f_{1}(x))x (grad f_{2}(x))\|}$
+    \end{center}
+   in označimo $x = x(t)$ naravno parametrizacijo krivulje K. Ta x je rešitev avtonomnega sistema diferencialnih enačb:
+   \begin{center}
+		$\dot{x} = F(x)$
+	\end{center}
 \end{frame}
 
-\begin{frame}{Eulerjeva metoda + geometrična intuicija}
-	
+\begin{frame}{Opis metod}
+ Za reševanje sistema $\dot{x} = F(x)$ lahko uporabimo katero izmed numeričnih metod za reševanje diferencialnih enačb:
+ \begin{itemize}
+    \item Eulerjeva metoda
+    \begin{itemize}
+        \item Bolj logična in preprosta
+        \item Komulativna napaka z vsakim korakom narašča
+    \end{itemize}
+    \item Runge-Kutta 4. reda
+    \begin{itemize}
+        \item Bolj natančna
+        \item Napaka precej manjša, kot pri Eulerjevi metodi
+    \end{itemize}
+ \end{itemize}
+\end{frame}
 
+\begin{frame}{Eulerjeva metoda}
+ \begin{itemize}
+    \item Na vsakem koraku naslednjo točko $(x_{i+1},y_{i+1})$ dobimo tako, da se za h (korak) premaknemo vzdolž tangente na rešitev $(x_{i},y_{i})$. 
+    \item Točka $(x_{i+1},y_{i+1})$ leži na drugi partikularni rešitvi kot $(x_{i},y_{i})$.
+    \item Napaka na vsakem koraku je reda $O(h^2)$.
+ \end{itemize}
+	\begin{block}{Geometrijsko:}
+    	\begin{figure}
+	    \centering
+    	\includegraphics[width=0.55\textwidth]{Euler_method_geom}
+\end{figure}
+    \end{block}
 \end{frame}
 
 \begin{frame}{Eulerjeva metoda brez popravljanja}
-	Opazimo, da je samo Eulerjeva metoda "blizu" pravilni rešitvi, ampak ni vredu. \\
+	Opazimo, da je Eulerjeva metoda brez popravljanja približka "blizu" pravilni rešitvi, vendar se napaka z iteracijami povečuje. \\
 	\begin{center}
 		\includegraphics[scale=0.30]{eul1}
 	\end{center}
 \end{frame}
 
 \begin{frame}{Eulerjeva metoda brez popravljanja}
-	Napake se seštevajo in so na večjem intervalu bolj opazne.\\
+	Napake, ki se seštevajo, so na večjem intervalu bolj opazne.\\
 	\begin{center}
 		\includegraphics[scale=0.30]{eul2}
+	\end{center}	
+\end{frame}
+
+\begin{frame}{RK4 metoda}
+	, ki kaže da je bolj natančna kot euler (napaka manjša) (mogoče primer navadn + primer z ogromnim korakom=vsaj malo napake?)
+\end{frame}
+
+\begin{frame}{Newtonova metoda za popravljanje približka}
+ \begin{itemize}
+    \item Z opisanima metodama za reševanje DE enačb, dobimo na vsakem koraku le približek (Posebej razvidno iz Eulerjeve metode).
+    \item Približek želimo popraviti tako, da bo spet ležal na krivulji preseka.
+ \end{itemize}
+ Dobljeni približek y, želimo popraviti na nek x, ki bo ležal na preseku. Če zapišemo $F(y) \cdot x = F(y)\cdot y $, nam to predstavlja enačbo ravnine, ki je zelo bliz normalni ravnini na krivuljo K. Z Newtonovo metodo z začetnim približkom y rešimo sistem enačb:
+  \begin{center}
+		$f_{1}(x)$ = $C_{1}$\\$f_{2}(x)$ = $C_{2}$\\ $F(y) \cdot x = F(y)\cdot y $
 	\end{center}
-	
 \end{frame}
 
 \begin{frame}{Eulerjeva metoda s popravljanjem z Newtonovo metodo}
-	Ko za popravljanje napake uporabimo Newtonovo metodo, dobimo pravilno "krivuljo".
+	Ko za popravljanje napake uporabimo Newtonovo metodo, dobimo pravilno rešitev.
 	\includegraphics[scale=0.2]{eul2}
 	\includegraphics[scale=0.2]{eul1}
 	\includegraphics[scale=0.2]{eul3_newt}
 	
 \end{frame}
 
-\begin{frame}{Potrebni pogoji + J matrika}
+\begin{frame}{Potrebni pogoji in Jacobijeva matrika}
 	Potreben pogoj za delovanje metod je, da sta funkciji $f_{1}$ in $f_{2}$ parcialno odvedljivi in da ima Jacobijeva matrika parcialnih odvodov poln rang 2. Za uspešno delovanje Newtonove metode moramo poiskati Jacobijevo matriko leve strani sistema nelinearnih enačb.
 	
 	\begin{center}
