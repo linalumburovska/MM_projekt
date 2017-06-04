@@ -225,5 +225,40 @@
 		\includegraphics[scale=0.3]{primer8_2}
 		\includegraphics[scale=0.3]{primer8_3} 
 	\end{frame}
+	\begin{frame}{Analiza}
+		Za vseh osem primerov smo naredili analizo, tako da smo izmerili povpre\v{c}no \v{s}tevilo korakov Newtonove metode z obe metode na dva na\v{c}ina: z adaptivnem in fiksnem koraku.
+	\end{frame}
+	\begin{frame}
+ \begin{tabular}{|c | c | c | c | c |} 
+ \hline
+ \textbf{Funkcije} &\multicolumn{2}{|l|}{\textbf{Euler}} &\multicolumn{2}{|l|}{\textbf{RK4}}\\                
+  \small &adaptivno & fiksno & adaptivno & fiksno \\ 
+ \hline
+ \tiny{}$f_{1}(x,y,z)=x^{2} + y^{2}+ z^{2}=4$ & & & &\\ 
+ \tiny{}$f_{2}(x,y,z)=x^{2} + y^{2}    =1$  & 3 & 5 & 3 & 3.222 \\
+ \hline
+ \tiny{}$f_{1}(x,y,z)=x^{2} + y^{2}+ z^{2}=4$ & & & &\\ 
+ \tiny{}$f_{2}(x,y,z)$ = $3x + 2y + z = 1$  & 3 & 4.222 & 3 & 3.333 \\
+ \hline
+ \tiny{}$f_{1}(x,y,z)=x^{2} + y^{2}+ z^{2}=4$ & & & &\\ 
+ \tiny{}$f_{2}(x,y,z)$ = $y^4 + log(x^2 + 1)z^2 - 4 = 1$  & 3 & 5 & 3 & 3.222 \\
+ \hline
+ \tiny{}$f_{1}(x,y,z)$ = $x^2 + cos(y)z^2 - 12 = 4$ & & & &\\ 
+\tiny{}$f_{2}(x,y,z)$ = $y^4 + log(x^2 + 1)z^2 - 4 = 1$  & 3 & 4.111 & 2.222 & 2.556 \\
+ \hline
+ \tiny{}$f_{1}(x,y,z)$ = $e^{(-x^{2}+1)}+y^{2}+z^{2} = 3$ & & & &\\ 
+ \tiny{}$f_{2}(x,y,z)$ = $e^{(xyz)}+y^{2}+z^{2} = 10$  & 3 & 4.667 & 2.222 & 2.667 \\
+ \hline
+ \tiny{}$f_{1}(x,y,z)$ = $e^{(-x^{2}+1)}+y^{2}+z^{2} = 3$ & & & &\\ 
+ \tiny{}$f_{2}(x,y,z)=x^{2} + y^{2}+ z^{2}=4$  & 3 & 5 & 3 & 3.222 \\
+ \hline
+ \tiny{}$f_{1}(x,y,z)$ = $e^{(-x^{2}+1)}+y^{2}+z^{2} = 3$ & & & &\\ 
+  \tiny{}$f_{2}(x,y,z)=x^{2} + y^{2}    =1$  & 3 & 5 & 3 & 3.333 \\
+  \hline
+\tiny{}$f_{1}(x,y,z)$ = $e^{(xyz)}+y^{2}+z^{2} = 10$ & & & &\\ 
+ \tiny{}$f_{2}(x,y,z)=x^{2} + y^{2}    =1$  & 3 & 5 & 3 & 3.556 \\
+  \hline
+\end{tabular}
+	\end{frame}
 	
 \end{document}
