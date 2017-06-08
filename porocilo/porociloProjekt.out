@@ -1,0 +1,15 @@
+\BOOKMARK [1][-]{section.1}{Predstavitev problema}{}% 1
+\BOOKMARK [1][-]{section.2}{Opis modela in uporabljenih metod}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Re\235evanje sistema diferencialnih enacb}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Eulerjeva metoda}{subsection.2.1}% 4
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Metoda Runge-Kutta 4}{subsection.2.1}% 5
+\BOOKMARK [3][-]{subsubsection.2.1.3}{Newtonova metoda za popravljanje pribli\236kov}{subsection.2.1}% 6
+\BOOKMARK [1][-]{section.3}{Potreben pogoj in Jacobijeva matrika}{}% 7
+\BOOKMARK [1][-]{section.4}{Adaptivni korak}{}% 8
+\BOOKMARK [1][-]{section.5}{Implementacija, testiranje in primeri}{}% 9
+\BOOKMARK [1][-]{section.6}{Analiza povprecnega \235tevila korakov Newtonove metode}{}% 10
+\BOOKMARK [1][-]{section.7}{Koda}{}% 11
+\BOOKMARK [1][-]{section.8}{Delitev dela v skupini}{}% 12
+\BOOKMARK [2][-]{subsection.8.1}{Programerski del}{section.8}% 13
+\BOOKMARK [2][-]{subsection.8.2}{Porocilo}{section.8}% 14
+\BOOKMARK [1][-]{section.9}{Reference}{}% 15
