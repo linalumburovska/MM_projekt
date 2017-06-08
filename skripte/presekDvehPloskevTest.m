@@ -216,4 +216,7 @@ endfunction
 %!  pf2=@(x,y,z) e.^(x.*y.*z)+y.^2+z.^2;
 %!  X0 = [1;1;sqrt(2)];
 %!  tspan = [0,10];
+%!  figure(1)
+%!  presekDvehPloskevTest(f1, C1, f2, C2, gradf1, gradf2,X0, 15, 0,pf1,pf2,tspan,1);
+%!  figure(2)
 %!  presekDvehPloskevTest(f1, C1, f2, C2, gradf1, gradf2,X0, 100, 0,pf1,pf2,tspan,0);
