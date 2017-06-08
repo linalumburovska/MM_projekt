@@ -148,26 +148,24 @@
 	\end{center}
 
 \section{Adaptivni korak}
-    Adaptivni korak omogoča bolj natančno rešitev problema, saj dinamično prilagaja dolžino koraka. To pomeni, da se pri uporabi programa ne potrebujemo ukvarjati z dolžino koraka in natančnostjo rešitve, saj program poskrbi za to. Adaptivni korak poveča oziroma zmanjša korak glede na število korakov, ki jih izvede Newtonova metoda za eno točko. Empirično smo določili, da je velikost koraka h na intervalu $h\in[10^{-7},100]$ in da se korak povečuje oziroma zmanjšuje za faktor 2. Korak je nespremenjen, če je število korakov 2 ali 3.
+    Adaptivni korak omogoča bolj natančno rešitev problema, saj dinamično prilagaja dolžino koraka. Tako lahko na bolj preprostih predelih preseka uporabljamo večji h (korak) in je metoda hitrejša, na bolj kompleksnih delih preseka, kjer je potrebna večja natančnost, pa se premikamo z manjšim korakom. Program poveča oziroma zmanjša korak glede na število korakov, ki jih izvede Newtonova metoda za eno točko. Empirično smo določili, da je velikost koraka h na intervalu $h\in[10^{-7},100]$ in da se korak povečuje oziroma zmanjšuje za faktor 2. Korak je nespremenjen, če je število korakov 2 ali 3.
 	
-	\begin{lstlisting}[language=Octave]
-	if(stK < 2) 
-      h = min(h * 2,100);
-      if h != 100
-        k = k - 1; 
-      endif
-      
-    elseif(stK > 3)
-      h = max(h / 2,0.0000001);
-      
-      if h != 0.0000001
-        k = k - 1;
-      endif
-    endif
-	\end{lstlisting}
-	
-	\includegraphics[scale=0.7]{slikaAda}
-	\includegraphics[scale=0.7]{slikaAda2}			
+	\begin{figure}[H]
+        \centering
+        \begin{minipage}{.5\textwidth}
+            \centering
+    	    \includegraphics[scale=0.50]{slikaAda}
+	        \caption{Adaptivni korak}
+    	    \label{slika:slikaAda}
+        \end{minipage}%
+        \begin{minipage}{.5\textwidth}
+            \centering
+    	    \includegraphics[scale=0.50]{slikaAda2}
+	        \caption{Brez adaptivnega koraka}
+    	    \label{slika:slikaAda2}
+        \end{minipage}
+    \end{figure}		
+    
 \section{Implementacija, testiranje in primeri}
 	Delovanje našega programa lahko preverimo s programom, ki smo ga napisali v Octave-u. Kot vhodne parametre mu podamo obe implicitno podani funkciji $f_{1}$, $f_{2}$, $C1$, $C2$, $grad(f_{1})$, $grad(f_{2})$. Določimo tudi začetni približek $x_{0}$, začetno dolžino koraka in pa parameter, ki določa metodo delovanja (Euler/Runge-Kutta).\\
 	Program poženemo na različnih primerih in štejemo povprečno dolžino koraka ter število porabljenih korakov:\\\\
@@ -287,12 +285,20 @@
     \end{minipage}
 \newpage
 \section{Analiza za povpre\v{c}no \v{s}tevilo korakov Newtonove metode} 
-Na koncu smo za vseh 8 primerov naredili analizo, tako da smo izmerili povpre\v{c}no \v{s}tevilo korakov Newtonove metode za RK4 in Eulerjevo matodo na dva na\v{c}ina: z adaptivnem in fiksnem korakom. Pri adaptivnem koraku smo izra\v{c}unali tudi minimalno in maksimalno \v{s}tevilo korakov. \newline
-Primer in rezultati izvajanje enega testa: \\
-	\includegraphics[scale=0.8]{a1}
-	\includegraphics[scale=0.8]{a2}
-	\includegraphics[scale=0.8]{a3}
-	\includegraphics[scale=0.8]{a4} \\ \\
+Na koncu smo za vseh 8 primerov naredili analizo, tako da smo izmerili povpre\v{c}no \v{s}tevilo korakov Newtonove metode za RK4 in Eulerjevo matodo na dva na\v{c}ina: z adaptivnem in fiksnem korakom. Pri adaptivnem koraku smo izra\v{c}unali tudi minimalno in maksimalno \v{s}tevilo korakov.\\ \\
+Primer in rezultati izvajanje enega testa: 
+
+    \begin{figure}[H]
+        \centering
+        \begin{minipage}{.5\textwidth}
+            \centering
+            \includegraphics[scale=1]{a1}
+            \includegraphics[scale=1]{a2}
+            \includegraphics[scale=1]{a3}
+	        \includegraphics[scale=1]{a4}
+        \end{minipage}%
+    \end{figure}	
+\newpage
 Po izvajanje tega postopka za vse primere smo dobili naslenje rezultate: \\
 \begin{tabular}{|c | c | c | c | c |} 
  \hline
@@ -323,11 +329,17 @@ Po izvajanje tega postopka za vse primere smo dobili naslenje rezultate: \\
 \small{}$f_{1}(x,y,z)$ = $e^{(xyz)}+y^{2}+z^{2} = 10$ & & & &\\ 
  \small{}$f_{2}(x,y,z)=x^{2} + y^{2}    =1$  & 3 & 5 & 3 & 3.556 \\
   \hline
-\end{tabular} \par
+\end{tabular}
+\newline
+\newline
+Pri bolj kompleksnih funkcijah kot so npr.:
+\begin{itemize}
+    \item $f_{1}(x,y,z)$ = $x^2 + cos(y)z^2 - 12 = 4$  in \item $f_{2}(x,y,z)$ = $y^4 + log(x^2 + 1)z^2 - 4 = 1$,
+\end{itemize}
+smo dobili pri adaptivnem koraku manjše povprečno število korakov, ker je metoda hitro konvergirala, vendar za to ceno zmanjšala korak in delovala počasneje (približek je bil blizu pravilne rešitve, saj je bil premik majhen). Tudi minimalno in maximalno število korakov sta bila manjša kot pri vseh ostalih. Adaptivni korak se pri teh funkcija približa spodnji meji (2), korak pa se za to ceno manjša. 
+\par Pri fiksnem koraku smo prišli do podobnega zaključka kot pri adaptivnem t.j., da bolj kompleksne funkcije hitreje skonvergirajo, saj mora biti korak manjši (ni prikazano v tabeli).
 
-Pri bolj kompleksnih funkcijah kot: $f_{1}(x,y,z)$ = $x^2 + cos(y)z^2 - 12 = 4$  in $f_{2}(x,y,z)$ = $y^4 + log(x^2 + 1)z^2 - 4 = 1$, pri adaptivnem koraku, \v{s}e posebej pri Runge-Kutta metodi, smo dobili manj\v{s}e povpre\v{c}no \v{s}tevilo korakov ker je metoda hitro konvergirala; pa tudi minimalno in maksimalno \v{s}tevilo korakov so bili manj\v{s}i kot pri vseh ostalih.\par
-Glede na fiksnem koraku spet smo pri\v{s}li do istem zaklju\v{c}ku kot pri adaptivnemu, da bolj kompleksne funkcije hitrej\v{s}e konvergirajo in rabijo manj \v{s}tevilo korakov, ampak \v{s}e vedno ve\v{c} v primerjavi z adaptivnemu. 
-
+\newpage
 \section{Koda}
 \begin{lstlisting}[language=Octave]
 
@@ -337,9 +349,9 @@ Glede na fiksnem koraku spet smo pri\v{s}li do istem zaklju\v{c}ku kot pri adapt
 \subsection{Programerski del}
 \begin{itemize}
 	\item Aljaž: Adaptivni korak, test skripta
-	\item Lina: Re\v{s}evanje primerov, empiri\v{c}no dolocanje parametrov
+	\item Lina: Re\v{s}evanje primerov, empiri\v{c}no določanje parametrov
 	\item Blažka: Ogrodje programa, zdru\v{z}itev funkcij, test skripta
-	\item Luka: Re\v{s}evanje primerov, empiri\v{c}no dolocanje parametrov
+	\item Luka: Re\v{s}evanje primerov, empiri\v{c}no določanje parametrov
 \end{itemize}
 \subsection{Poro\v{c}ilo}
 \begin{itemize}
