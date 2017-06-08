@@ -148,7 +148,26 @@
 	\end{center}
 
 \section{Adaptivni korak}
-		
+    Adaptivni korak omogoča bolj natančno rešitev problema, saj dinamično prilagaja dolžino koraka. To pomeni, da se pri uporabi programa ne potrebujemo ukvarjati z dolžino koraka in natančnostjo rešitve, saj program poskrbi za to. Adaptivni korak poveča oziroma zmanjša korak glede na število korakov, ki jih izvede Newtonova metoda za eno točko. Empirično smo določili, da je velikost koraka h na intervalu $h\in[10^{-7},100]$ in da se korak povečuje oziroma zmanjšuje za faktor 2. Korak je nespremenjen, če je število korakov 2 ali 3.
+	
+	\begin{lstlisting}[language=Octave]
+	if(stK < 2) 
+      h = min(h * 2,100);
+      if h != 100
+        k = k - 1; 
+      endif
+      
+    elseif(stK > 3)
+      h = max(h / 2,0.0000001);
+      
+      if h != 0.0000001
+        k = k - 1;
+      endif
+    endif
+	\end{lstlisting}
+	
+	\includegraphics[scale=0.7]{slikaAda}
+	\includegraphics[scale=0.7]{slikaAda2}			
 \section{Implementacija, testiranje in primeri}
 	Delovanje našega programa lahko preverimo s programom, ki smo ga napisali v Octave-u. Kot vhodne parametre mu podamo obe implicitno podani funkciji $f_{1}$, $f_{2}$, $C1$, $C2$, $grad(f_{1})$, $grad(f_{2})$. Določimo tudi začetni približek $x_{0}$, začetno dolžino koraka in pa parameter, ki določa metodo delovanja (Euler/Runge-Kutta).\\
 	Program poženemo na različnih primerih in štejemo povprečno dolžino koraka ter število porabljenih korakov:\\\\
