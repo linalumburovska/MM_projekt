@@ -34,7 +34,6 @@
 		\item Adaptivni korak
 		\item Implementacija, testiranje in primeri
 		\item Analiza za povprečno število korakov Newtonove metode
-		\item Koda
 		\item Delitev dela v skupini
 		\item Reference
 	\end{enumerate} 
@@ -138,7 +137,7 @@
 		$\vec{F}(\vec{x})$ = $\begin{bmatrix}
 		f_{1}(\vec{v}) - C_{1} \\
 		f_{2}(\vec{v}) - C_{2} \\
-		\hspace{1mm}\vec{v} \cdot \vec{x} - \vec{v} \cdot \vec{y}) \\
+		\hspace{1mm}\vec{v} \cdot \vec{x} - \vec{v} \cdot \vec{y} \\
 		\end{bmatrix}$
 	\end{center}
 	
@@ -333,12 +332,7 @@
 	\end{itemize}
 	smo dobili pri adaptivnem koraku manjše povprečno število korakov, ker je metoda hitro konvergirala, vendar za to ceno zmanjšala korak in delovala počasneje (približek je bil blizu pravilne rešitve, saj je bil premik majhen). Tudi minimalno in maksimalno število korakov sta bila manjša kot pri vseh ostalih. Adaptivni korak se pri teh funkcijah približa spodnji meji (2), dolžina koraka pa se manjša. 
 	\par Pri fiksnem koraku smo prišli do podobnega zaključka kot pri adaptivnem, da bolj kompleksne funkcije hitreje konvergirajo, saj mora biti korak manjši (ni prikazano v tabeli).
-	
-	\newpage
-	\section{Koda}
-	\begin{lstlisting}[language=Octave]
-	
-	\end{lstlisting}
+
 	\newpage
 	\section{Delitev dela v skupini}
 	\subsection{Programerski del}
